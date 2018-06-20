@@ -94,7 +94,7 @@ header {
 .bg-before, .bg-after {
     width: 100vw;
     height: 100vh;
-    background: url('../images/item4.png');
+    background: url('./../images/item4.png');
     background-size: cover;
     position: absolute;
     bottom: 0;
@@ -103,6 +103,6 @@ header {
     z-index: 99;
 }
 .bg-before {
-    background: url('../images/item1.png');
+    background: url('./../images/item1.png');
     background-size: cover;
 }
