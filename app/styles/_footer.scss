@@ -1,0 +1,15 @@
+footer {
+    width: 100%;
+    background: #ffdf08;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.social {
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+    &-item {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}

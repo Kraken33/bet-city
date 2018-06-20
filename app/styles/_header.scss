@@ -1,0 +1,108 @@
+@import 'mobile';
+
+header {
+    min-height: calc(100vh - 70px);
+    padding-top: 70px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    .bubbly-button {
+        margin: 20px 0;
+    }
+    &>* {
+        opacity: 0;
+    }
+    .header-image2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        z-index: 99;
+        @include mobile() {
+            display: none;
+        }
+        @include desktopxl() {
+            width: 550px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .header-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 500px;
+        z-index: 99;
+        @include mobile() {
+            display: none;
+        }
+        @include desktopxl() {
+            width: 650px;
+        }
+        img {
+            width: 100%;
+        }
+    } 
+}
+.text-u {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+.header-before {
+    margin-top: 25px;
+    font-size: 46px;
+    letter-spacing: 1.5px;
+}
+.header-center {
+    margin-top: 31px;
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 100;
+}
+.header-center__bg {
+    position: relative;
+}
+.header-center__bg::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #ffdf08;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-center__bg-text {
+    position: relative;
+    z-index: 99;
+}
+.header-after {
+    margin: 35px auto 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.75px;
+    position: relative;
+    z-index: 99999 !important; 
+}
+.bg-before, .bg-after {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/item4.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 1 !important;
+    z-index: 99;
+}
+.bg-before {
+    background: url('../images/item1.png');
+    background-size: cover;
+}

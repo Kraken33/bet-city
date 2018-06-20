@@ -1,0 +1,28 @@
+.items {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 9999;
+}
+.item {
+    max-width: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    position: relative;
+    &:hover {
+        z-index: 99;
+    }
+}
+.item-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(40px);
+    img {
+        width: 100%;
+    }
+}

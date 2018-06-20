@@ -1,0 +1,26 @@
+- var partners = ['litres','mountainside','mvideo','rozetka','sportmaster','sv','Tbdress','TELE2','tutu']
+- var partners2 = ['banggood','aliexpress','220volt','asos','Beddinginn','bonprix','booking','tutu','Wigsbuy']
+- var back = ['16','8', '1.6','3.2','4','8','8','3.5','3.12']
+- var back2 = ['4.8','9.83', '4','9.6','','8','3.48','3.12','10.4']
+- var n = 0;
+
+.partners-wrap
+    .partners
+        while n < partners.length
+            .partners-item
+                div
+                    img(src="images/"+partners[n]+".png", alt="", srcset="")
+                    .item-back-wr
+                        .item-back-top Вам вернется до
+                        .item-back-under= back[n]+"%"
+                        - n++
+    .partners-u
+        - n = 0
+        while n < partners2.length
+            .partners-u-item
+                div
+                    img(src="images/"+partners2[n]+".png", alt="", srcset="")
+                    .item-back-wr
+                        .item-back-top Вам вернется до
+                        .item-back-under= back2[n]+"%"
+                        - n++

@@ -1,0 +1,35 @@
+@import 'fonts';
+@import 'loader';
+@import 'header';
+@import 'items';
+@import 'bottom';
+@import 'button-bubble';
+@import 'partners';
+@import 'footer';
+@import 'mobile';
+@import 'modal';
+@import 'button-under';
+@import 'demo';
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  background: url('../images/background.jpg') no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-origin: border-box;
+}
+.w-100 {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  @include tablet() {
+    max-width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+}
+.bubbly-button {
+}

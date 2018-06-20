@@ -1,0 +1,43 @@
+@import 'mobile';
+
+#btn-result {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 0;
+}
+.modal-window {
+    position: relative;
+    max-width: 500px;
+    max-height: 100%;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 5px 5px 0px 0px rgb(255,223,8);
+    text-align: left;
+    div {
+        margin: 10px;
+    }
+}
+.modal-window__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    img {
+        width: 20px;
+    }
+}

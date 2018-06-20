@@ -1,0 +1,27 @@
+.button-under {
+    background: none;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: #000;
+        transition: .5s;
+    }
+}
