@@ -164,7 +164,7 @@ const productionConfig = merge([
     use: [parts.autoprefix(), cssPreprocessorLoader],
     options: {
       filename: `${paths.css}/[name].[contenthash:8].css`,
-      chunkFilename: `${paths.css}/[id].[contenthash:8].css`
+      chunkFilename: `./${paths.css}/[id].[contenthash:8].css`
     }
   }),
   parts.purifyCSS({
@@ -218,10 +218,10 @@ function getPaths ({
   sourceDir = 'app',
   buildDir = 'docs',
   staticDir = '',
-  images = 'bet-city/images',
-  fonts = 'bet-city/fonts',
-  js = 'bet-city/scripts',
-  css = 'bet-city/styles'
+  images = 'images',
+  fonts = 'fonts',
+  js = 'scripts',
+  css = 'styles'
 } = {}) {
   const assets = { images, fonts, js, css }
 
