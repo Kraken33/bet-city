@@ -218,10 +218,10 @@ function getPaths ({
   sourceDir = 'app',
   buildDir = 'docs',
   staticDir = '',
-  images = 'images',
-  fonts = 'fonts',
-  js = 'scripts',
-  css = 'styles'
+  images = 'bet-city/images',
+  fonts = 'bet-city/fonts',
+  js = 'bet-city/scripts',
+  css = 'bet-city/styles'
 } = {}) {
   const assets = { images, fonts, js, css }
 
